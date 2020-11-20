@@ -1,0 +1,12 @@
+table.table.table-striped#tblCongressmen
+      thead.thead-dark
+        tr
+          th Nombre
+          th Apellido
+          th Partido Politico
+      tbody
+        each congress in congressmen
+          tr
+            th= congress.surName
+            th= congress.lastName
+            th= congress.politicalParty

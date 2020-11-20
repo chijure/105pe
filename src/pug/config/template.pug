@@ -1,0 +1,40 @@
+block config
+  include variables
+doctype html
+html(lang="es")
+  head
+    title= pageTitle
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="description" content=pageTitle)
+
+    // Google / Search Engine Tags
+    meta(itemprop="name" content=pageTitle)
+    meta(itemprop="description" content=pageDescription)
+    meta(itemprop="image" content=pageImage)
+
+    // Facebook Meta Tags
+    meta(property="og:url" content=pageUrl)
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=pageTitle)
+    meta(property="og:description" content=pageDescription)
+    meta(property="og:image" content=pageImage)
+
+    // Twitter Meta Tags
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content=twitterAccount)
+    meta(name="twitter:title" content=pageTitle)
+    meta(name="twitter:description" content=pageDescription)
+    meta(name="twitter:image" content=pageImage)
+
+    link(rel="stylesheet" href="assets/css/styles.css")
+    link(rel="shortcut icon" href="img/favicon.png")
+    
+  body
+    include /includes/header
+
+    block main
+
+    include /includes/footer
+
+    script(src="assets/js/scripts-min.js")

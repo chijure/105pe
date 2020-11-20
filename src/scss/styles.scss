@@ -1,0 +1,35 @@
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/grid";
+
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/tables";
+
+// Config
+@import "config/functions";
+@import "config/variables";
+@import "config/mixins";
+
+// Base and elements (generic)
+@import "base/base";
+
+// LAYOUT
+@import "layout/layout";
+
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+@import "components/buttons";
+@import "components/menus";
+
+// Theme (colors and fonts)
+@import "theme/typography";
+
+// Utilities (hacks)
+@import "hacks/hacks";

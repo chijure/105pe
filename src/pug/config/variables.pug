@@ -1,0 +1,536 @@
+-let pageTitle = '105pe'
+-let siteName = '105pe'
+-let twitterAccount = '@jhuanre'
+-let pageDescription = 'Página Web donde encontrar a los 105 congrecistas que votaron a favor de la vacancia del presidente Martin Vizcarra en el 2020'
+-let pageImage = ''
+-let pageUrl = 'https://105.pe'
+
+-
+  let congressmen = [
+    {
+      surName: 'Luis Alberto',
+      lastName: 'Valdez Farias',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Guillermo',
+      lastName: 'Aliaga Pajares',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'Maria Teresa',
+      lastName: 'Cabrera Vega',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Eduardo Geovanni',
+      lastName: 'Acate Coronel',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Humberto',
+      lastName: 'Acuña Peralta',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Edgar Arnold',
+      lastName: 'Alarcón Tejada',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Hirma Norma',
+      lastName: 'Alencastre Miranda',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'Carlos Alberto',
+      lastName: 'Almeri Veramendi',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Gilbert Juan',
+      lastName: 'Alonzo Fernández',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'José Luis',
+      lastName: 'Ancalle Gutiérrez',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Yessica Marisela',
+      lastName: 'Apaza Quispe',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Jesús Orlando',
+      lastName: 'Arapa Roque',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Rita Elena',
+      lastName: 'Ayasta de Díaz',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Julia Benigna',
+      lastName: 'Ayquipa Torres',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Wilmer Solis',
+      lastName: 'Bajonero Olivas',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Betto',
+      lastName: 'Barrionuevo Romero',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'María Isabel',
+      lastName: 'Bartolo Romero',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Lenin Fernando',
+      lastName: 'Bazán Villanueva',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Walter',
+      lastName: 'Benavides Gavidia',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Alfredo',
+      lastName: 'Benites Agurto',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Ricardo Miguel',
+      lastName: 'Burga Chuquipiondo',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Irene',
+      lastName: 'Carcausto Huanca',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Luis Felipe',
+      lastName: 'Castillo Olivia',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Luz Milagros',
+      lastName: 'Cayguaray Gambini',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Wilmer',
+      lastName: 'Cayllahua Barrientos',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'María Teresa',
+      lastName: 'Céspedes Cárdenas',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Posemoscrowte Irrhoscopt',
+      lastName: 'Chagua Payano',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Hipólito',
+      lastName: 'Chaiña Contreras',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Roberto Carlos',
+      lastName: 'Chavarría Vilocatoma',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Martha Gladys',
+      lastName: 'Chávez Cossio',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Lenin Abraham',
+      lastName: 'Checco Chauca',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Omar Karim',
+      lastName: 'Chehade Moya',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Diethell',
+      lastName: 'Columbus Murata',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Cesar Augusto',
+      lastName: 'Combina Salvatierra',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Julio Fredy',
+      lastName: 'Condori Flores',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Kenyon Eduardo',
+      lastName: 'Durand Bustamante',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Yeremi Aron',
+      lastName: 'Espinoza Velarde',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Yessy Nélida',
+      lastName: 'Fabián Diaz',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Carlos Enrique',
+      lastName: 'Chacón Fernández',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Johan',
+      lastName: 'Flores Villegas',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Maria Martina',
+      lastName: 'Gallardo Becerra',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Paul Gabriel',
+      lastName: 'García Oviedo',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Cecilia',
+      lastName: 'Garcia Rodriguez',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'César',
+      lastName: 'Gonzales Tuanama',
+      politicalParty: 'NO AGRUPADO'
+    },
+    {
+      surName: 'Moises',
+      lastName: 'Gonzales Cruz',
+      politicalParty: 'NO AGRUPADO'
+    },
+    {
+      surName: 'Otto Napoleón',
+      lastName: 'Guilbovich Arteaga',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Robinson Dociteo',
+      lastName: 'Gupioz Ríos',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Robledo Noé',
+      lastName: 'Gutarra Ramos',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Alexander',
+      lastName: 'Hidalgo Zamalloa',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Juan de Dios',
+      lastName: 'Huamán Champli',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Nelly',
+      lastName: 'Huamani Machaca',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Leornarod',
+      lastName: 'Inga Sales',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Mártires',
+      lastName: 'Lizana Santos',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Freddy',
+      lastName: 'Llaulli Romero',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Alexander',
+      lastName: 'Lozano Inostroza',
+      politicalParty: 'NO AGRUPADO'
+    },
+    {
+      surName: 'José Luis',
+      lastName: 'Luna Morales',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Raúl',
+      lastName: 'Machaca Mamani',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Jim Ali',
+      lastName: 'Mamani Barriga',
+      politicalParty: 'NO AGRUPADO'
+    },
+    {
+      surName: 'Héctor Simón',
+      lastName: 'Maquera Chavez',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Fernando',
+      lastName: 'Meléndez Celis',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Javier',
+      lastName: 'Mendoza Marquina',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Omar',
+      lastName: 'Merino López',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Carlos Fernando',
+      lastName: 'Mesía Ramirez',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Absalón',
+      lastName: 'Montoya Guivan',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Anthony Renson',
+      lastName: 'Novoa Cruzado',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Jesús del Carmen',
+      lastName: 'Núñez Marreros',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'María del Carmen',
+      lastName: 'Omonte Durand',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Daniel',
+      lastName: 'Oseda Yucra',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Juan Carlos',
+      lastName: 'Oyola Rodríguez',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Rubén',
+      lastName: 'Pantoja Calvo',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Rosario',
+      lastName: 'Paredes Eyzaguirre',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Lusmila',
+      lastName: 'Pérez Espíritu',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Luis Jorge',
+      lastName: 'Pérez Flores',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'Jhosept Amado',
+      lastName: 'Pérez Mimbela',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Carlos Andrés',
+      lastName: 'Pérez Ochoa',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Marcos Antonio',
+      lastName: 'Pichilingue Gómez',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Isaias',
+      lastName: 'Pineda Santos',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Liliana Angélica',
+      lastName: 'Pinedo Achaca',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Napoleón',
+      lastName: 'Puño Lecarnaque',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Yvan',
+      lastName: 'Quispe Apaza',
+      politicalParty: 'FA'
+    },
+    {
+      surName: 'Mario Javier',
+      lastName: 'Quispe Suárez',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Rubén',
+      lastName: 'Ramos Zapana',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Alcides',
+      lastName: 'Rayme Marín',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'María Cristina',
+      lastName: 'Retamozo Lezama',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Perci',
+      lastName: 'Rivas Ocejo',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Walter Jesús',
+      lastName: 'Rivera Guerra',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Tania Rosalía',
+      lastName: 'Rodas Malca',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Richard',
+      lastName: 'Rubio Gariza',
+      politicalParty: 'FREPAP'
+    },
+    {
+      surName: 'Rolando Rubén',
+      lastName: 'Ruíz Pinedo',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Mónica Elizabeth',
+      lastName: 'Saavedra Ocharán',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Franco',
+      lastName: 'Salinas López',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Orestes Pompeyo',
+      lastName: 'Sánchez Luis',
+      politicalParty: 'PODEMOS'
+    },
+    {
+      surName: 'Robertina',
+      lastName: 'Santillana Paredes',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'María Luisa',
+      lastName: 'Silupu Inga',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Luis Carlos',
+      lastName: 'Simeón Hurtado',
+      politicalParty: 'AP'
+    },
+    {
+      surName: 'Erwin',
+      lastName: 'Tito Ortega',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Felicita Madaleine',
+      lastName: 'Tocto Guerrero',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'Valeria Carolina',
+      lastName: 'Valer Collado',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Grimaldo',
+      lastName: 'Vásquez Tan',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'José Alejandro',
+      lastName: 'Vega Antonio',
+      politicalParty: 'UPP'
+    },
+    {
+      surName: 'Marco Antonio',
+      lastName: 'Verde Heidinger',
+      politicalParty: 'APP'
+    },
+    {
+      surName: 'Widman Napoleón',
+      lastName: 'Vigo Gutiérrez',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Miguel Ángel',
+      lastName: 'Vivanco Reyes',
+      politicalParty: 'FP'
+    },
+    {
+      surName: 'Mariano Andrés',
+      lastName: 'Yupanqui Miñano',
+      politicalParty: 'SP'
+    },
+    {
+      surName: 'Edward Alexander',
+      lastName: 'Zarate Antón',
+      politicalParty: 'FP'
+    }
+  ]
+
